@@ -1,11 +1,12 @@
 import React from 'react';
 import RunsList from './Runs';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <RunsList />
-    </div>
+    <Routes>
+      <Route path="run/" element={<RunsList />} />
+    </Routes>
   );
 }
 
