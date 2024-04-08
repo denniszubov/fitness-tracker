@@ -27,7 +27,7 @@ const RunsList = () => {
       <ul>
         {runs.map(run => (
           <li key={run.id}>
-            {run.date}, {run.distance_km} km, avg heart rate: {run.average_heart_rate}
+            {run.date}, {run.distance_km} km, avg heart rate: {run.average_heart_rate} with id: {run.id}
           </li>
         ))}
       </ul>
