@@ -4,6 +4,7 @@ from activity.models import Activity
 
 
 class Run(Activity):
+    person = models.ForeignKey(User, on_delete=models.PROTECT, related_name='runs')
     distance_km = models.DecimalField(max_digits=5, decimal_places=3)
     average_pace = models.DurationField()
     average_heart_rate = models.IntegerField(null=True, blank=True)
